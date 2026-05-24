@@ -1,0 +1,4 @@
+hardware/verilog/
+hardware/.*
+hardware/project/
+hardware/target/

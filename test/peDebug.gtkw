@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Nov  8 20:22:29 2022
+[*]
+[dumpfile] "/home/sanjay/research/GCN-Accelerator/test/Wrapper.vcd"
+[dumpfile_mtime] "Tue Nov  8 20:00:08 2022"
+[dumpfile_size] 858762
+[savefile] "/home/sanjay/research/GCN-Accelerator/test/peDebug.gtkw"
+[timestart] 225190
+[size] 1920 1043
+[pos] 1797 -78
+*-14.000000 292000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Wrapper.
+[treeopen] Wrapper.core.
+[treeopen] Wrapper.core.compute.
+[sst_width] 371
+[signals_width] 348
+[sst_expanded] 1
+[sst_vpaned_height] 298
+@22
+Wrapper.core.compute.peArray_0.drTime[31:0]
+Wrapper.core.compute.peArray_0.dr_currDenCol_q[31:0]
+@23
+Wrapper.core.compute.peArray_0.dr_currSpaRow_q[6:0]
+@28
+Wrapper.core.compute.peArray_0.dr_isNewOutput_q
+Wrapper.core.compute.peArray_0.dr_outWrite_q
+@22
+Wrapper.core.compute.peArray_0.dr_peReqdenXSize_q[6:0]
+@28
+Wrapper.core.compute.peArray_0.dr_valid_q
+@22
+Wrapper.core.compute.peArray_0.spVal_io_spReadData_data[31:0]
+Wrapper.core.compute.peArray_0.spDen_io_spReadCmd_addr[15:0]
+Wrapper.core.compute.peArray_0.spDen_io_spReadData_data[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
