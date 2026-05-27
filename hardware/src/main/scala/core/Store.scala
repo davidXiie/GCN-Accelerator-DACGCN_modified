@@ -88,6 +88,7 @@ class Store(debug: Boolean = false)(implicit p: Parameters) extends Module with 
     }
     is(sWriteData){
       when(io.me_wr.data.ready){
+        saddr := saddr + (mp.dataBits/8).U
         when(wcnt === wlen){
           state := sWriteAck
         }.otherwise{
@@ -106,7 +107,6 @@ class Store(debug: Boolean = false)(implicit p: Parameters) extends Module with 
         }.otherwise{
           state := sWriteCmd
           waddr := waddr + transferMaxSizeBytes.U
-          saddr := waddr + transferMaxSizeBytes.U
           when(transferRem < maxTransferPerReq){
             wlen := transferRem - 1.U
             transferRem := 0.U

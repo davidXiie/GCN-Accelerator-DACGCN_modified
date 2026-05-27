@@ -1,4 +1,28 @@
-hardware/verilog/
-hardware/.*
-hardware/project/
+# ========== IDE / 编辑器 ==========
+.metals/
+.vscode/
+
+# ========== SBT 构建产物 ==========
 hardware/target/
+hardware/project/target/
+
+# ========== 生成的 Verilog ==========
+hardware/verilog/
+笔记
+
+# ========== 仿真输出 ==========
+test/sim_build/
+test/results.xml
+test/*.vcd
+test/*.fst
+test/actual_result*.txt
+test/expected_result.txt
+test/diff_result.txt
+test/record/
+
+# ========== 备份文件 ==========
+test/*_ori.*
+
+# ========== Python ==========
+__pycache__/
+*.ipynb_checkpoints/

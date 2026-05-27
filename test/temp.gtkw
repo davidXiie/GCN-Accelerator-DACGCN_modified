@@ -90,3 +90,80 @@ Wrapper.core.load.transferRem[6:0]
 Wrapper.core.load.transferTotal[2:0]
 [pattern_trace] 1
 [pattern_trace] 0
+
+Wrapper.m_axi_gmem_AWVALID
+Wrapper.m_axi_gmem_AWREADY
+Wrapper.m_axi_gmem_AWADDR
+Wrapper.m_axi_gmem_AWLEN
+Wrapper.m_axi_gmem_AWSIZE
+
+Wrapper.m_axi_gmem_WVALID
+Wrapper.m_axi_gmem_WREADY
+Wrapper.m_axi_gmem_WDATA
+Wrapper.m_axi_gmem_WSTRB
+Wrapper.m_axi_gmem_WLAST
+
+Wrapper.m_axi_gmem_BVALID
+Wrapper.m_axi_gmem_BREADY
+
+Wrapper.core_io_me_wr_0_cmd_valid
+Wrapper.core_io_me_wr_0_cmd_ready
+Wrapper.core_io_me_wr_0_cmd_bits_addr
+Wrapper.core_io_me_wr_0_cmd_bits_len
+
+Wrapper.core_io_me_wr_0_data_valid
+Wrapper.core_io_me_wr_0_data_ready
+Wrapper.core_io_me_wr_0_data_bits_data
+Wrapper.core_io_me_wr_0_data_bits_strb
+
+Wrapper.core_io_me_wr_0_ack
+
+
+Wrapper.core.store.state
+Wrapper.core.store.start
+Wrapper.core.store.done
+Wrapper.core.store.io_inst_valid
+Wrapper.core.store.io_inst_bits
+Wrapper.core.store.io_me_wr_cmd_valid
+Wrapper.core.store.io_me_wr_cmd_ready
+Wrapper.core.store.io_me_wr_cmd_bits_addr
+Wrapper.core.store.io_me_wr_data_valid
+Wrapper.core.store.io_me_wr_data_ready
+Wrapper.core.store.io_me_wr_data_bits_data
+
+Wrapper.core.compute.start
+Wrapper.core.compute.done
+Wrapper.core.compute.io_inst_valid
+Wrapper.core.compute.io_inst_bits
+Wrapper.core.compute.dec_io_prStart
+Wrapper.core.compute.dec_io_prEnd
+Wrapper.core.compute.dec_io_sramCol
+Wrapper.core.compute.dec_io_sramPtr
+Wrapper.core.compute.dec_io_sramVal
+Wrapper.core.compute.dec_io_sramDen
+Wrapper.core.compute.dec_io_rowSize
+Wrapper.core.compute.dec_io_colSize
+Wrapper.core.compute.dec_io_denSize
+
+
+Wrapper.core_io_me_wr_0_cmd_valid
+Wrapper.core_io_me_wr_0_cmd_bits_addr
+Wrapper.m_axi_gmem_AWVALID
+Wrapper.m_axi_gmem_AWADDR
+Wrapper.m_axi_gmem_WDATA
+
+
+Wrapper.core.state[2:0]
+Wrapper.core.load.done
+Wrapper.core.compute.io_done
+Wrapper.core.store.state[2:0]
+Wrapper.core.compute.state[3:0]   
+Wrapper.core.compute.io_done      
+Wrapper.core.compute.start       
+
+Wrapper.core.load.state[2:0]              # 看卡在哪个状态
+Wrapper.core.load.io_me_rd_data_valid     # DRAM 数据有没有回来
+Wrapper.core.load.io_spWrite_valid        # 有没有写进 scratchpad
+Wrapper.core.load.io_spWrite_bits_addr[31:0]  # 写到 scratchpad 哪个地址
+Wrapper.core.load.io_spWrite_bits_data[511:0] # 写的数据内容
+Wrapper.core.load.transferRem[6:0]        # 还剩多少没传完
